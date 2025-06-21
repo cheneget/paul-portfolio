@@ -25,56 +25,17 @@
   </script>
 </head>
 <!--Start of Tawk.to Script-->
-
 <script type="text/javascript">
 var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
 (function(){
 var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
 s1.async=true;
-s1.src='https://embed.tawk.to/6855b4af119e4c190e23946a/1iu7cjjot';
+s1.src='https://embed.tawk.to/68560082552cdd190f7b447a/1iu7v400b';
 s1.charset='UTF-8';
 s1.setAttribute('crossorigin','*');
 s0.parentNode.insertBefore(s1,s0);
 })();
-
 </script>
-<script>
-  Tawk_API = Tawk_API || {};
-  Tawk_API.onLoad = function () {
-    Tawk_API.maximize(); // Auto-open chat
-
-    // Play the popup sound
-    const sound = new Audio("sounds/chat-popup.mp3");
-    sound.play().catch((e) => {
-      console.log("Autoplay blocked by browser. Sound will play after user interaction.");
-    });
-  };
-</script>
-<script>
-  Tawk_API = Tawk_API || {};
-
-  document.addEventListener("DOMContentLoaded", function () {
-    let played = false;
-
-    const enableSound = () => {
-      if (!played) {
-        const sound = new Audio("sounds/chat-popup.mp3");
-        sound.play().catch(() => {});
-        played = true;
-      }
-    };
-
-    // Trigger on first scroll or click
-    window.addEventListener("scroll", enableSound, { once: true });
-    window.addEventListener("click", enableSound, { once: true });
-
-    Tawk_API.onLoad = function () {
-      Tawk_API.maximize(); // Still auto-open the chat
-    };
-  });
-</script>
-
-
 <!--End of Tawk.to Script-->
 
 <body>
