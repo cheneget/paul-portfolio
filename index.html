@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Paul Ndege | Developer Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <script>
+    // Highlight nav links on scroll
+    window.addEventListener('scroll', () => {
+      const sections = document.querySelectorAll('section');
+      const navLinks = document.querySelectorAll('nav a');
+      let current = '';
+
+      sections.forEach((section) => {
+        const sectionTop = section.offsetTop - 130;
+        if (pageYOffset >= sectionTop) current = section.getAttribute('id');
+      });
+
+      navLinks.forEach((a) => {
+        a.classList.remove('active');
+        if (a.getAttribute('href') === `#${current}`) a.classList.add('active');
+      });
+    });
+  </script>
+</head>
+<!--Start of Tawk.to Script-->
+
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/6855b4af119e4c190e23946a/1iu7cjjot';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+
+</script>
+<script>
+  Tawk_API = Tawk_API || {};
+  Tawk_API.onLoad = function () {
+    Tawk_API.maximize(); // Auto-open chat
+
+    // Play the popup sound
+    const sound = new Audio("sounds/chat-popup.mp3");
+    sound.play().catch((e) => {
+      console.log("Autoplay blocked by browser. Sound will play after user interaction.");
+    });
+  };
+</script>
+<script>
+  Tawk_API = Tawk_API || {};
+
+  document.addEventListener("DOMContentLoaded", function () {
+    let played = false;
+
+    const enableSound = () => {
+      if (!played) {
+        const sound = new Audio("sounds/chat-popup.mp3");
+        sound.play().catch(() => {});
+        played = true;
+      }
+    };
+
+    // Trigger on first scroll or click
+    window.addEventListener("scroll", enableSound, { once: true });
+    window.addEventListener("click", enableSound, { once: true });
+
+    Tawk_API.onLoad = function () {
+      Tawk_API.maximize(); // Still auto-open the chat
+    };
+  });
+</script>
+
+
+<!--End of Tawk.to Script-->
+
+<body>
+  <!-- Navigation Bar -->
+  <header>
+</div>
+<div class="top-left-photo">
+  <img src="images/pau2.jpg" alt="Paul Ndege" />
+</div>
+
+
+    <div class="container">
+      <h1>Paul Cheneget Ndege</h1>
+      <p>Software Developer | Entrepreneur | IT Specialist | Chess Trainer</p>
+      <nav>
+        <a href="#hero">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#chess">Chess</a>
+        <a href="#shop">Shop</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="hero" class="card hero">
+      <div class="hero-text">
+        <h2 class="animated-heading">Hello, I'm Paul</h2>
+        <p>I build clean, secure, and impactful web solutions. With a background in IT, cybersecurity, and software development, I bring practical solutions to technical problems.</p>
+        <a class="btn " href="#contact">Let's Connect</a>
+      </div>
+      <div class="hero-code">
+        <pre><code>// Sample
+const developer = {
+  name: "Paul Ndege",
+  skills: ["React", "PHP", "Cybersecurity"]
+};</code></pre>
+      </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="card">
+      <h2>About Me</h2>
+      <p>I am a BSc IT graduate from Dedan Kimathi University. I’ve worked with the ICT department at the University of Nairobi, trained under The Jitu program in software development, and run ArmpedUp Cyber Electronics & Phone accessories offering cyber services, electronics, and support solutions. I'm passionate about solving problems with code and providing tech solutions that make an impact. Outside of tech, I enjoy playing chess competitively and coaching students as a certified trainer.</p>
+       <a class="btn  attention-blink download-cv" href="documents/Paul_Ndege_CV.pdf" download>Download My CV</a>
+ </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="card">
+      <h2>Skills</h2>
+      <ul class="grid">
+        <li>React & Frontend Development</li>
+        <li>PHP & Backend Logic</li>
+        <li>Cybersecurity (Cisco Certified)</li>
+        <li>Git & GitHub</li>
+        <li>Social media manager</li>
+        <li>Networking & Troubleshooting</li>
+      </ul>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="card">
+      <h2>Projects</h2>
+      <div class="project-grid">
+        <div class="project-card">
+          <h3>To be updated</h3>
+          <p>I will update soon</p>
+          <a href="#">visit Site</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Chess Section -->
+<section id="chess" class="card">
+  <h2>Chess Life</h2>
+  <p>I am a certified Chess Trainer, formerly serving under Quo Vadis Chess Club and an active member of the Chess Kenya Federation. I coach both beginners and competitive players. I also play online and take part in national tournaments.</p>
+  <ul>
+    <li>Lichess: <a href="https://lichess.org/@/cheneget" target="_blank">cheneget</a></li>
+    <li>Chess.com: <a href="https://www.chess.com/member/gwayne1" target="_blank">gwayne1</a></li>
+    <li>Chess Kenya Profile: <a href="https://chesskenya.or.ke/player/YOUR_PROFILE_ID" target="_blank">Paul</a></li>
+  </ul>
+  <p>Interested in learning chess from scratch or improving your game? Enroll for online or in-person training sessions via WhatsApp below.</p>
+  <a class="btn attention-blink" href="https://wa.me/+254794159085?text=I'm%20interested%20in%20your%20chess%20classes" target="_blank">Enroll in Chess Classes</a>
+</section>
+
+  <a class="btn attention-blink" href="https://wa.me/c/YOUR_WHATSAPP_BUSINESS_CATALOG_LINK" target="_blank">Visit WhatsApp Shop</a>
+</section>
+
+
+   <!-- Shop Section -->
+<section id="shop" class="card">
+  <h2>Tech Shop – ArmpedUp Cyber</h2>
+  <p>I run ArmpedUp Cyber — a tech shop where we offer cyber services, phone accessories, and electronic appliances. You can view our sample products below then visit our WhatsApp Business catalog to place an order.</p>
+
+  <img src="images/image.jpeg" alt="Product samples" style="width:100%; border-radius: 8px; margin-bottom: 20px;" />
+
+  <div class="product-grid">
+    <div class="product-card">
+      <img src="images/Earbud1.jpeg" alt="Earbud" class="product-image" />
+      <img src="images/Earbud2.jpeg" alt="Earbud" class="product-image" />
+      <h3>Oraimo Earbud</h3>
+      <p>Oraimo New Air F9 Pro+ With HiFi Sound Quality</p>
+      <strong>KES 800</strong>
+    </div>
+    <div class="product-card">
+      <img src="images/WirelessEarbud.jpeg" alt="Wireless Earbud" class="product-image" />
+      <h3>Wireless Airpods</h3>
+      <p>TWS Airpods Pro3 Bluetooth Headsets Wireless Pods Pro Earpods Earphones</p>
+      <strong>KES 600</strong>
+    </div>
+    <div class="product-card">
+      <img src="images/typeccharger.jpeg" alt="Phone Charger" class="product-image" />
+      <h3>Type C Charger</h3>
+      <p>Fast-charging type C charger</p>
+      <strong>KES 250</strong>
+    </div>
+    <div class="product-card">
+      <img src="images/earphone.jpeg" alt="Earphones" class="product-image" />
+      <h3>Oraimo Earphones</h3>
+      <p>Oraimo Original OEP - E11 Earphones Deeper Bass, HD Sound Earphone + Mic.</p>
+      <strong>KES 300</strong>
+    </div>
+    <div class="product-card">
+      <img src="images/Oraimo.jpeg" alt="Oraimo" class="product-image" />
+      <h3>Full Charger Oraimo</h3>
+      <p>Oraimo 20 Watts PD Fast Charger Type C-Type C (C TO C Full Charger)</p>
+      <strong>KES 500</strong>
+    </div>
+    <div class="product-card">
+      <img src="images/powerking.jpeg" alt="Extension Cable" class="product-image" />
+      <h3>Extension (4-Port)</h3>
+      <p>Power King 4 Way Power Extension</p>
+      <strong>KES 450</strong>
+    </div>
+      <div class="product-card">
+      <img src="images/Poster - ArmpedUp Cyber Your Creative Solutions Hub (1).png" alt="Printing" class="product-image" />
+      <h3>Available Cyber Services</h3>
+      <p> These are the Cyber Services we offer among many others that are not listed  </p>
+      <strong>KES Affordable and Negotiable Services </strong>
+    </div>
+  </div>
+
+  <a class="btn attention-blink" href="https://wa.me/c/YOUR_WHATSAPP_BUSINESS_CATALOG_LINK" target="_blank">Visit WhatsApp Shop</a>
+</section>
+
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="card">
+      <h2>Contact Me</h2>
+      <p>Email: <a href="mailto:paulndege359@gmail.com">paulndege359@gmail.com</a></p>
+      <p>Phone: <a href="tel:+254769145462">+254 769 145 462</a></p>
+      <p>GitHub: <a href="https://github.com/chenegetE" target="_blank">cheneget</a></p>
+      <p>LinkedIn: <a href="https://linkedin.com/in/YOUR_USERNAME" target="_blank">Paul Ndege</a></p>
+      <p>Location: Nairobi, Kenya</p>
+      
+    </section>
+  </main>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2025 Paul Ndege. All rights reserved.</p>
+    <nav>
+      <a href="#hero">Home</a> |
+      <a href="#about">About</a> |
+      <a href="#projects">Projects</a> |
+      <a href="#chess">Chess</a> |
+      <a href="#shop">Shop</a> |
+      <a href="#contact">Contact</a>
+    </nav>
+  </footer>
+</body>
+</html>
